@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@1,700&family=Source+Code+Pro:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@1,700&family=Source+Code+Pro:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@1,300&family=Source+Code+Pro:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@1,300&family=Sofia+Sans:wght@700&family=Source+Code+Pro:wght@900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    background-color: rgb(4, 5, 22);
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 150px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+.RNavbar{
+  padding: 2vh;
+  display: flex;
+  position: fixed;
+  height: auto;
+  width: 35vw;
+  border-radius: 50px 0 0 50px;
+  background-color: rgb(4, 5, 22);
+  /* flex-direction: row; */
+  align-items: flex-end;
+  right: 0vw;
+  top: 5%;
+
+} 
+.Rnav-items{
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.Rnav-items a{
+  /* align-items: flex-end; */
+  font-size: 20px;
+  padding: 0 30px;
+  text-decoration: none;
+  color: white;
+  opacity: 100%;
+}
+.Rnav-items a:hover{
+  color: #2c98e5;
+  
+}
+.infocon{
+    /* height: 100%; */
+    width: 100%;
+    /* height: fi; */
+    /* margin: 120px auto; */
+    display: flex;
+    /* justify-content: space-around; */
+}
+
+.devPics{
+    height: 100px; 
+    width: 400px;
+}
+
+.namefr{
+    color: white;
+}
+
+@keyframes lights {
+    0% {
+      color: hsl(230, 40%, 80%);
+      text-shadow:
+        0 0 1em hsla(320, 100%, 50%, 0.2),
+        0 0 0.125em hsla(320, 100%, 60%, 0.3),
+        -1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+        1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+    }
+    
+    30% { 
+      color: hsl(230, 80%, 90%);
+      text-shadow:
+        0 0 1em hsla(320, 100%, 50%, 0.5),
+        0 0 0.125em hsla(320, 100%, 60%, 0.5),
+        -0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+        0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+    }
+    
+    40% { 
+      color: hsl(230, 100%, 95%);
+      text-shadow:
+        0 0 1em hsla(320, 100%, 50%, 0.5),
+        0 0 0.125em hsla(320, 100%, 90%, 0.5),
+        -0.25em -0.125em 0.125em hsla(40, 100%, 60%, 0.2),
+        0.25em 0.125em 0.125em hsla(200, 100%, 60%, 0.4);
+    }
+    
+    70% {
+      color: hsl(230, 80%, 90%);
+      text-shadow:
+        0 0 1em hsla(320, 100%, 50%, 0.5),
+        0 0 0.125em hsla(320, 100%, 60%, 0.5),
+        0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+        -0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+    }
+    
+    100% {
+      color: hsl(230, 40%, 80%);
+      text-shadow:
+        0 0 1em hsla(320, 100%, 50%, 0.2),
+        0 0 0.125em hsla(320, 100%, 60%, 0.3),
+        1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+        -1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+    }
+    
+  }
+  
+
+.rish {
+    margin: auto;
+    font-size: 5rem;
+    font-weight: 300;
+    animation: lights 5s 750ms linear infinite;
+  }
+
+
+.devinfo1{
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+    
+}
+.hello{
+    font-size: 50px;
+    font-family: 'Source Code Pro', monospace;
+}
+.name{
+    font-size: 70px;
+    /* font-family: 'IBM Plex Mono', monospace;    */
+    font-family: 'IBM Plex Mono', monospace;
+
+}
+.about{
+    font-size: 40px;
+    font-family: 'Source Code Pro', monospace;
+    
+}
+.buttns{
+    margin-top: 100px;
+}
+.buttns button{
+  --x: 50%;
+	--y: 50%;
+    font-size: 20px ;
+    padding: 9px 14px  ;
+    color:white;
+    background-color: rgb(29, 173, 198);
+    border-radius: 22px;
+    font-weight: bold;
+    margin: 0 3px;
+    cursor: pointer;
+    border: 2px solid transparent;
+	background: linear-gradient(#000, #000) padding-box, radial-gradient(farthest-corner at var(--x) var(--y), #00C9A7, #845EC2) border-box;
+    
+}
+
+.buttons button:hover{
+    color: rgb(29, 119, 112);
+    background-color: aquamarine;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+
+/* body {
+  font-family:'Roboto';
+  background-color: #131417;  
+} */
+p {
+  text-shadow: 0 0 7px rgba(255,255,255,.3), 0 0 3px rgba(255,255,255,.3);
+}
+.container2 {
+  color: black;
+  font-size: 2.26rem;
+  text-transform: uppercase;
+  height:43vh;
+  display: flex;
+  /* align-items: center; */
+  /* justify-content: center; */
+  flex-direction: column;
+}
+
+.animation {
+  height:50px;
+  overflow:hidden;
+  margin-left: 0;
+}
+.a1{
+    padding-top: 25px;
+    flex-direction: row;
+    display: flex;
+}
+
+
+.animation > div > div {
+  padding: 0.25rem 0.75rem;
+  height:2.81rem;
+  margin-bottom: 2.81rem;
+  margin-left: 1rem;
+  display:inline-block;
+}
+
+.animation div:first-child {
+  animation: text-animation 8s infinite;
+}
+
+.first div {
+  background-color:#85e8d6;
+}
+.second div {
+  background-color:#bdf2a8;
+}
+
+@keyframes text-animation {
+  0% {margin-top: 0;}
+  10% {margin-top: 0;}
+  20% {margin-top: -5.62rem;}
+  30% {margin-top: -5.62rem;}
+  40% {margin-top: -11.24rem;}
+  60% {margin-top: -11.24rem;}
+  70% {margin-top: -5.62rem;}
+  80% {margin-top: -5.62rem;}
+  90% {margin-top: 0;}
+  100% {margin-top: 0;}
+}
+.iam{
+    font-size: 25px;
+    font-style: italic;
+    color: white;
+    text-transform: none;
+    margin-top: 0.5rem;
+}
+
+.navbar{
+    height: 5px;
+}
+
+.cntcts{
+    padding-top: 30px;
+    font-size: 40px;
+}
+
+.wave {
+  animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s;        /* Change to speed up or slow down */
+  animation-iteration-count: infinite;  /* Never stop waving :) */
+  transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+  100% { transform: rotate( 0.0deg) }
+}
+
+.bd{
+  font-size: 18px;
+  font-style: none;
+  color: rgb(148, 240, 219);
+  padding-top: 40px;
+  text-transform: none;
+}
+
+
+
+@media (max-width: 1150px){
+ 
+  .main{
+    background-color: rgb(4, 5, 22);
+    min-width: 100vw;
+    min-height: 100vh;
+    padding-top: 150px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .Rnav-items a{
+    font-size: 18px;
+  }
+}
+
+@media (max-width:990px){
+  .devPics{
+    display: none;
+  }
+}
+
+@media (max-width: 600px){
+  .namefr{
+    font-size: 20px;
+  }
+  .rish{
+    font-size: 50px;
+  }
+  
+  .devPics{
+    height: 50px; 
+    width: 200px;
+    display: none;
+  }
+  .iam{
+    font-size: 15px;
+  }
+  .animation {
+    height:40px;
+    font-size: 25;
+    overflow:hidden;
+    margin-left: 0;
+  }
+  .main{
+    background-color: rgb(4, 5, 22);
+    min-width: 100vw;
+    min-height: 100vh;
+    padding-top: 150px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .Rnav-items a{
+    font-size: 15px;
+  }
+  .RNavbar{
+    padding-right: 210px;
+ 
+  }
+}
+
+@media (max-width: 480px){
+  .namefr{
+    font-size: 15px;
+  }
+  .rish{
+    font-size: 40px;
+  }
+  
+  .devPics{
+    height: 50px; 
+    width: 200px;
+    display: none;
+  }
+  .iam{
+    font-size: 15px;
+  }
+  .first{
+    padding-top: 4px;
+  }
+  .animation {
+    height:30px;
+    font-size: 20px;
+    overflow:hidden;
+    margin-left: 0;
+  }
+  .main{
+    background-color: rgb(4, 5, 22);
+    min-width: 100vw;
+    min-height: 100vh;
+    padding-top: 150px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .Rnav-items a{
+    font-size: 15px;
+  }
+  .RNavbar{
+    padding-right: 200px;
+ 
+  }
+  .cntcts{
+    font-size: 30px;
+  }
+  .buttns button{
+    font-size: 13px;
+  }
+}
